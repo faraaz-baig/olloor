@@ -7,7 +7,7 @@
   <p align="center">
     "a tool that lets you write smart bookmarks in [rust] and then share them across all your browsers..."
     <br />
-    <a href="https://github.com/fbsamples/rusty-bunny#demo">View Demo</a>
+    <a href="https://github.com/faraaz-baig/olloor/blob/main/demo.gif">View Demo</a>
   </p>
 </p>
 
