@@ -19,9 +19,9 @@ Olloor is a tool that lets you write smart bookmarks in rust and then share them
 
 ## Demo
 
-![rusty-bunny demo][product-screenshot]
+![Olloor demo][product-screenshot]
 
-This is what `rusty-bunny` looks like in action.
+This is what `olloor` looks like in action.
 
 ### Built With
 
@@ -47,7 +47,7 @@ rustup override set nightly
 
 #### Installation
 
-1. Clone the rusty-bunny
+1. Clone the olloor
 
 ```sh
 git clone https://github.com/faraaz-baig/olloor.git
@@ -103,7 +103,7 @@ cargo test
 
 To test out a command, type in http://localhost:8000/search?cmd= followed by your command.
 
-The following commands are supported by `rusty-bunny`:
+The following commands are supported by `Olloor`:
 
 - "tw" -> redirects to twitter.com
 - "tw @username" -> redirects to twitter.com/username
