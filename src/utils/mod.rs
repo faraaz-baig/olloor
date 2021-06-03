@@ -1,6 +1,12 @@
-pub mod google;
-pub mod github;
-pub mod twitter;
+pub mod dribbble; //Passed
+pub mod duckduckgo; //Passed
+pub mod facebook; //Passed
+pub mod github; //Passed
+pub mod google; //Passed
+pub mod hackernews; //Passed
+pub mod instagram; //Passed
+pub mod twitter; //Passed
+pub mod youtube; //Passed
 
 pub fn get_command_from_query_string(query_string: &str) -> &str {
     if query_string.contains(' ') {
@@ -26,7 +32,7 @@ mod tests {
 
     #[test]
     fn test_get_command_from_query_string_with_whitespace() {
-        let actual = get_command_from_query_string("tw @fbOpenSource");
+        let actual = get_command_from_query_string("tw @faraazofficial");
         let expected = "tw";
         assert_eq!(actual, expected);
     }

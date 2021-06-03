@@ -20,7 +20,13 @@ fn search(cmd: String) -> Redirect {
     let redirect_url = match command {
         "gh" => utils::github::construct_github_url(&cmd),
         "tw" => utils::twitter::construct_twitter_url(&cmd),
-        _ => utils::google::construct_google_search_url(&cmd),
+        "go" => utils::google::construct_google_search_url(&cmd),
+        "yt" => utils::youtube::construct_youtube_url(&cmd),
+        "ig" => utils::instagram::construct_instagram_url(&cmd),
+        "fb" => utils::facebook::construct_facebook_url(&cmd),
+        "db" => utils::dribbble::construct_dribbble_url(&cmd),
+        "hn" => utils::hackernews::construct_hackernews_url(&cmd),
+        _ => utils::duckduckgo::construct_duckduckgo_search_url(&cmd),
     };
 
     Redirect::to(redirect_url)

@@ -6,10 +6,17 @@ use percent_encoding::{utf8_percent_encode, AsciiSet, CONTROLS};
 const FRAGMENT: &AsciiSet = &CONTROLS.add(b' ').add(b'"').add(b'<').add(b'>').add(b'`');
 
 pub fn construct_google_search_url(query: &str) -> String {
-    let encoded_query = utf8_percent_encode(query, FRAGMENT).to_string();
-    let google_search_url = format!("https://google.com/search?q={}", encoded_query);
+    if query == "go" {
+        let google_dotcom = "https://google.com";
 
-    google_search_url
+        google_dotcom.to_string()
+    } else {
+        // Assume the other match is "go page"
+        let encoded_query = utf8_percent_encode(&query[3..], FRAGMENT).to_string();
+        let google_url = format!("https://www.google.com/search?q={}", encoded_query);
+
+        google_url
+    }
 }
 
 #[cfg(test)]
@@ -17,19 +24,20 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_construct_google_search_url() {
-        let fake_query = "hello";
+    fn test_construct_google_search_url_with_go() {
+        let fake_query = "go";
         assert_eq!(
             construct_google_search_url(fake_query),
-            "https://google.com/search?q=hello"
+            "https://google.com"
         );
     }
+
     #[test]
-    fn test_construct_google_search_url_with_encoding() {
-        let fake_query = "hello world";
+    fn test_construct_google_search_url_with_search_query() {
+        let fake_query = "go trick2g";
         assert_eq!(
             construct_google_search_url(fake_query),
-            "https://google.com/search?q=hello%20world"
+            "https://www.google.com/search?q=trick2g"
         );
     }
 }
