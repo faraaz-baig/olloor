@@ -8,7 +8,7 @@ mod utils;
 
 #[get("/")]
 fn index() -> &'static str {
-    "Hello, world!"
+    "Welcome to olloor!"
 }
 
 #[get("/search?<cmd>")]

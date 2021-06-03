@@ -113,6 +113,48 @@ The following commands are supported by `Olloor`:
 
 Everything else redirects to a google search with your query.
 
+<!-- UPCOMING -->
+
+## Updates
+
+Olloor currently supports on top websites visited around the globe.
+
+- [ ] Search Engines
+
+  - [x] Duckduckgo (Default)
+  - [x] Google
+  - [ ] Yandex
+
+- [ ] Entertainment & Media
+
+  - [x] Youtube
+  - [ ] Twitch
+  - [ ] Netflix
+  - [ ] Zoom
+
+- [ ] Shopping
+
+  - [ ] Amazon
+  - [ ] Wish
+  - [ ] Flipkart
+
+- [ ] Social
+
+  - [x] Facebook
+  - [x] Instagram
+  - [x] Twitter
+  - [ ] Reddit
+  - [ ] Linkedin
+  - [ ] Pinterest
+
+- [ ] Developers & Designers
+  - [x] Github
+  - [x] Hacker News
+  - [x] Dribbble
+  - [ ] Gitlab
+  - [ ] Stack Overflow
+  - [ ] Wikipedia
+
 <!-- CONTRIBUTING -->
 
 ## Contributing
