@@ -15,7 +15,7 @@ pub fn construct_dribbble_url(query: &str) -> String {
     } else if &query[..4] == "db @" {
         construct_dribbble_profile_url(&query[4..])
     } else {
-        // Assume the other match is "hn sometext"
+        // Assume the other match is "db sometext"
         // and search on dribbble
         construct_dribbble_search_url(&query[3..])
     }
@@ -44,7 +44,7 @@ mod tests {
 
     #[test]
     fn test_construct_dribbble_url_query() {
-        let fake_query = "hn hello world";
+        let fake_query = "db hello world";
         assert_eq!(
             construct_dribbble_url(fake_query),
             "https://dribbble.com/search/hello%20world"

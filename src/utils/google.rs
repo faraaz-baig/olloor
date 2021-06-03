@@ -34,10 +34,10 @@ mod tests {
 
     #[test]
     fn test_construct_google_search_url_with_search_query() {
-        let fake_query = "go trick2g";
+        let fake_query = "go faraazbaig";
         assert_eq!(
             construct_google_search_url(fake_query),
-            "https://www.google.com/search?q=trick2g"
+            "https://www.google.com/search?q=faraazbaig"
         );
     }
 }
