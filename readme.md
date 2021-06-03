@@ -148,12 +148,18 @@ Olloor currently supports on top websites visited around the globe.
   - [ ] Pinterest
 
 - [ ] Developers & Designers
+
   - [x] Github
   - [x] Hacker News
   - [x] Dribbble
   - [ ] Gitlab
   - [ ] Stack Overflow
   - [ ] Wikipedia
+
+- [ ] Tools
+
+  - [ ] Weather
+  - [ ] Calculator
 
 <!-- CONTRIBUTING -->
 
