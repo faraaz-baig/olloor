@@ -7,7 +7,7 @@
   <p align="center">
     "a tool that lets you search web using CLI like commands, written in [rust]"
     <br />
-    <a href="https://github.com/faraaz-baig/olloor/blob/main/Demo.gif"><img src="https://github.com/faraaz-baig/olloor/blob/main/Demo.gif"/></a>
+    <a href="https://github.com/faraaz-baig/olloor/blob/main/Demo.gif">View Demo</a>
   </p>
 </p>
 
@@ -191,4 +191,4 @@ Faraaz Baig - [@faraazofficial](https://twitter.com/faraazofficial)
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[product-screenshot]: demo.gif
+[product-screenshot]: Demo.gif
