@@ -5,7 +5,7 @@
   <h3 align="center">Olloor</h3>
 
   <p align="center">
-    "a tool that lets you write smart bookmarks in [rust] and then share them across all your browsers..."
+    "a tool that lets you search web using CLI like commands, written in [rust]"
     <br />
     <a href="https://github.com/faraaz-baig/olloor/blob/main/demo.gif">View Demo</a>
   </p>
@@ -15,7 +15,7 @@
 
 ## About the Project
 
-Olloor is a tool that lets you write smart bookmarks in rust and then share them across all your browsers and with a group of people or the whole world.
+Olloor is a tool that lets you search web using CLI like commands and written in rust.
 
 ## Demo
 
